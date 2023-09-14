@@ -20,7 +20,7 @@
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 1px;
             padding: 20px;
         }
         .movie {
@@ -35,31 +35,204 @@
     </style>
 </head>
 <body>
-    <header>
-      link
-        <h1>Site de Filmes</h1>
-    </header>
+    <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Título de Entrada</h1>
+    <style>
+        h1{
+            color: #effffc
+         
+        }
+        
+    </style>
+  </header>
+  <!-- Resto do conteúdo do seu site -->
+</body>
+</html>
+<style>
+    div{
+     overflow-x: auto;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+   
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #00D8FF; /* Fundo azul neon */
+    margin: 1;
+    padding: 0;
+    color: #fff; /* Cor do texto principal */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 1 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo com transparência para destacar o azul neon */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+ 
+    max-height: 500px; /* Altura máxima para ativar a barra de rolagem, ajuste conforme necessário */
+}
+
+.filme {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Fundo branco para cada filme */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra para cada filme */
+}
+
+.filme img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.info {
+    flex: 1; /* Ocupa o espaço restante disponível */
+}
+
+h2 {
+    color: #333; /* Cor do título do filme */
+}
+
+p {
+    color: #666; /* Cor do texto de descrição do filme */
+}
+
+a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #00D8FF; /* Mudança de cor no hover */
+}
+
+
+</style>  
     <div class="container">
-        <!-- Lista de filmes -->
-        <div class="movie">
-            <img src="https://t.ctcdn.com.br/stxQ-oq7DDFG3Y-tNV1mrKicA-8=/1400x788/smart/i525540.jpeg" alt="Harry Potter">
-            <h2>Harry Potter</h2>
-            <p>------><a href="" target="_blank">Assistir</a></p>
-            
-            
-        </div>
-        <div class="movie">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrAvXbAbnuBz0eVBPNINibMk4XMybIXtMjw&usqp=CAU" alt=Ladybud">
-            <h2>Miraculous Ladybug</h2>
-           <p>-----></p><a href="https://vod-ycweb.yamyday.com/vod/9CC7416CA3A94916B6DDBD72663F219B_media.mp4?content_auth2=/vod/%3Ftag%3Dslb%26host%3Dvod-ycweb.yamyday.com%26app_id%3Dcom.global.ycweb%26trans_id%3DfHBMoLtYMGEQ_DL1thkAAcrlr%26app_version%3D20001%26client_ip%3D2804:3bfc:113:ba00:8d48:237e:ffae:c505%26dev_id%3Dd25bf4c0c7cdde9600fa0bc1d01fb573%26auth_id%3D226477552_com.global.ycweb_cloud-c2-redis_0%26user_id%3D226477552%26expired%3D1694644674%26token%3Df05c305fc5c00de7f9efd09a6ffb69fb&content_license2=tag%3Dslb%26scheme%3Dslb%26app_id%3Dcom.global.ycweb%26media_code%3D9CC7416CA3A94916B6DDBD72663F219B%26expired%3D1694644674%26token%3D2da18a9b4d51912ec473235ba208c062&timestamp=1694630276336" target="_blank">Assistir</a></p>
-           
-        </div>
-        <div class="movie">
-            <img src="data:image/jpeg;base64,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" alt="A Culpa é das Estrelas">
-            <h2>A Culpa é das Estrelas</h2>
-            <p>----->. <a href="https://cdn77-vid.xnxx-cdn.com/VPKIfwqaZshkIZ8qTjRHHQ==,1694641802/videos/hls/b0/67/c5/b067c596f66e0db431a93a0340c6f62e/hls-1080p-270a6.m3u8" target="_blank">Assistir</a></p>
-            
-        </div>
+        <img src="https://yhimg.hdawiyr1g.xyz/public/images/27a1de3a-a227-496b-830a-727371187cde.jpg" alt="LUCY">
+        <a href="https://yhimg.hdawiyr1g.xyz/public/images/27a1de3a-a227-496b-830a-727371187cde.jpg" class="">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      <div class="container">
+        <img src="imagem-do-filme.jpg" alt="Nome do Filme">
+        <a href="#" class="assistir-link">Assistir</a>
+      </div>
+      
+    <style>
+  body {
+    background-color: #00D8FF; /* Substitua a cor pelo código de cor que desejar */
+  }
+</style>
+<style>
+.h2{
+    
+    text-align-last: center;
+    overflow-y: scroll;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="seu-estilo.css">
+   
+    <
     
         <!-- Adicione mais filmes aqui -->
     </div>
